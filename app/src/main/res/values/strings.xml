@@ -5,4 +5,5 @@
     <string name="stone_choice_text">Камень</string>
     <string name="paper_choice_button_text">Бумага</string>
     <string name="scissors_choice_button_text">Ножницы</string>
+    <string name="back_button_text">Назад</string>
 </resources>

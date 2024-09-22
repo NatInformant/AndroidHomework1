@@ -1,40 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back_button_text"
+        android:layout_marginBottom="200dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/your_choice_title_text"
-        android:textSize="20sp"
-        />
+        android:textSize="20sp" />
+
     <TextView
         android:id="@+id/your_choice_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        tools:text = "Камень"
         android:layout_marginTop="10dp"
-        />
+        android:textSize="20sp"
+        tools:text="Камень" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/computer_choice_title_text"
-        android:textSize="20sp"
-        />
+        android:textSize="20sp" />
+
     <TextView
         android:id="@+id/computer_choice_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        tools:text = "Камень"
         android:layout_marginTop="10dp"
-        />
+        android:textSize="20sp"
+        tools:text="Камень" />
 
     <TextView
         android:id="@+id/game_result_text_view"
@@ -42,6 +49,5 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:textSize="40sp"
-        tools:text="Вы победили!"
-        />
+        tools:text="Вы победили!" />
 </LinearLayout>
