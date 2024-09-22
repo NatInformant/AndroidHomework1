@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidHomework1</string>
+    <string name="your_choice_title_text">Ваш выбор:</string>
+    <string name="computer_choice_title_text">Выбор компьютера:</string>
+    <string name="stone_choice_text">Камень</string>
+    <string name="paper_choice_button_text">Бумага</string>
+    <string name="scissors_choice_button_text">Ножницы</string>
+</resources>
