@@ -15,10 +15,17 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
 
-        setUpChoiceButtonsLiteners()
+        setUpChoiceButtonsListeners()
     }
 
-    private fun setUpChoiceButtonsLiteners() {
+    private fun choiceButtonsClickListener(choice: Signs) {
+        with(Intent(this, SecondActivity::class.java)) {
+            putExtra(SecondActivity.USER_CHOICE_KEY_NAME, choice.name)
+            startActivity(this)
+        }
+    }
+
+    private fun setUpChoiceButtonsListeners() {
         findViewById<Button>(R.id.rock_choice_button).setOnClickListener {
             choiceButtonsClickListener(Signs.Rock)
         }
@@ -27,13 +34,6 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.paper_choice_button).setOnClickListener {
             choiceButtonsClickListener(Signs.Paper)
-        }
-    }
-
-    private fun choiceButtonsClickListener(choice: Signs) {
-        with(Intent(this, SecondActivity::class.java)) {
-            putExtra(SecondActivity.userChoiceKeyName, choice.name)
-            startActivity(this)
         }
     }
 
